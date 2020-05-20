@@ -1,26 +1,25 @@
-# WordPress template for Platform.sh
+# WordPress for Platform.sh
 
-This project provides a starter kit for WordPress projects hosted on Platform.sh. It is primarily an example, although could be used as the starting point for a real project.  It is built using Composer, via the popular <a href="https://github.com/johnpbloch/wordpress">johnpbloch/wordpress</a> script.
+<p align="center">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/wordpress/.platform.template.yaml&utm_content=wordpress&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
+</a>
+</p>
 
-## Starting a new project
+This template builds WordPress on Platform.sh using the [`johnbolch/wordpress`](https://github.com/johnpbloch/wordpress) "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.
 
-To start a new project based on this template, follow these 3 simple steps:
+WordPress is a blogging and lightweight CMS written in PHP.
 
-1. Clone this repository locally.  You may optionally remove the `origin` remote or remove the `.git` directory and re-init the project if you want a clean history.
+## Services
 
-2. Create a new project through the Platform.sh user interface and select "Import an existing project" when prompted.
+* PHP 7.3
+* MariaDB 10.2
 
-3. Run the provided Git commands to add a Platform.sh remote and push the code to the Platform.sh repository.
+## Post-install
 
-That's it!  You now have a working "hello world" level project you can build on.
+1. Run through the WordPress installer as normal.  You will not be asked for database credentials as those are already provided.
 
-## Using as a reference
-
-You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` file and the `.platform` directory.
-
-## Local settings
-
-This example looks for an optional `wp-config-local.php` alongside your `wp-config.php` file that you can use to develop locally. This file is ignored in git.
+2. This example looks for an optional `wp-config-local.php` in the project root that you can use to develop locally. This file is ignored in git.
 
 Example `wp-config-local.php`:
 
@@ -42,3 +41,19 @@ define('LOGGED_IN_KEY', 'LOGGED_IN_SALT');
 define('NONCE_KEY', 'NONCE_SALT');
 define('AUTH_SALT', 'SECURE_AUTH_SALT');
 ```
+
+## Customizations
+
+The following changes have been made relative to WordPress as it is downloaded from WordPress.org.  If using this project as a reference for your own existing project, replicate the changes below to your project.
+
+* It uses the [`johnbolch/wordpress`](https://github.com/johnpbloch/wordpress) "Composer Fork" of WordPress, which allow the site to be managed entirely with Composer.
+* The `.platform.app.yaml`, `.platform/services.yaml`, and `.platform/routes.yaml` files have been added.  These provide Platform.sh-specific configuration and are present in all projects on Platform.sh.  You may customize them as you see fit.
+* An additional Composer library, [`platformsh/config-reader`](https://github.com/platformsh/config-reader-php), has been added.  It provides convenience wrappers for accessing the Platform.sh environment variables.
+* The `wp-config.php` file has been modified to use the Config Reader to configure WordPress based on Platform.sh environment variables if present.  If not, your own `wp-config-local.php` file will be loaded to configure the site for local development.
+* The upstream `composer.json` file has been modified to include the script `movewpconfig`. It moves `wp-config.php` into the default install directory and docroot `wordpress` after composer install is run.
+
+## References
+
+* [WordPress](https://wordpress.org/)
+* [WordPress on Platform.sh](https://docs.platform.sh/frameworks/wordpress.html)
+* [PHP on Platform.sh](https://docs.platform.sh/languages/php.html)
