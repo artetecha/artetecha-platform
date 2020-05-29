@@ -3,19 +3,19 @@
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
 
-"https://{default}/":
+'https://{default}/':
   type: upstream
-  upstream: "wpnetwork:http"
+  upstream: 'neminis:http'
   cache:
     enabled: true
     # Base the cache on the session cookies. Ignore all other cookies.
     cookies:
-      - "/^wordpress_logged_in_/"
-      - "/^wordpress_sec_/"
-      - "wordpress_test_cookie"
-      - "/^wp-settings-/"
-      - "/^wp-postpass/"
+      - '/^wordpress_logged_in_/'
+      - '/^wordpress_sec_/'
+      - 'wordpress_test_cookie'
+      - '/^wp-settings-/'
+      - '/^wp-postpass/'
 
-"https://www.{default}/":
+'https://www.{default}/':
   type: redirect
-  to: "https://{default}/"
+  to: 'https://{default}/'

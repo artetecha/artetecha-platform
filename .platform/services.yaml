@@ -3,6 +3,6 @@
 # Each service listed will be deployed
 # to power your Platform.sh project.
 
-db:
+neminisdb:
   type: mariadb:10.4
   disk: 2048

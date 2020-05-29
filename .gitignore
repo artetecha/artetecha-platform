@@ -3,10 +3,13 @@
 /wp-config-local.php
 
 # Ignore Composer packages.
-/vendor/
+/*/vendor/
 
 # Temporary and build directories.
-/_www
+/*/_www
+
+# WordPress directory.
+/*/wordpress
 
 # Standard Wordpress files and folders:
 /wordpress/vendor/

@@ -22,6 +22,12 @@
     "irc": "irc://irc.freenode.net/wordpress",
     "source": "http://core.trac.wordpress.org/browser"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
   "require": {
     "php": ">=5.6.20",
     "johnpbloch/wordpress-core-installer": "^1.0",
