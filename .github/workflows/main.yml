@@ -4,7 +4,7 @@ name: CI
 
 on:
   schedule:
-  - cron:  '*/5 * * * *'
+  - cron:  '0 4 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,8 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2.2.0
       - name: Install Platform.sh CLI
-        run: curl -sS https://platform.sh/cli/installer | php
+        run: |
+          curl -sS https://platform.sh/cli/installer | php
+          echo "::add-path::/home/runner/.platformsh/bin"
       - name: Backup Neminis
-        run: /home/runner/.platformsh/bin/platform backup:create -p ${{secrets.PSH_PROJECT_NEMINIS}} master
+        run: platform  backup:create -W -p ${{secrets.PSH_PROJECT_NEMINIS}} master
         env:
           PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}
