@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84c764dd3580f3e3617945f4be3c5cfd",
+    "content-hash": "3d5e438d8074404e82b27e898d32f71e",
     "packages": [
         {
             "name": "composer/installers",
@@ -175,27 +175,28 @@
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4"
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
-                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/237faae9a60a4a2e1d45dce1a5836ffa616de63e",
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.6.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
             },
             "require-dev": {
-                "composer/composer": "^1.0",
-                "phpunit/phpunit": ">=4.8.35"
+                "composer/composer": "^1.0 || ^2.0",
+                "phpunit/phpunit": ">=5.7.27"
             },
             "type": "composer-plugin",
             "extra": {
@@ -220,7 +221,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2018-11-09T20:10:38+00:00"
+            "time": "2020-04-16T21:44:57+00:00"
         },
         {
             "name": "platformsh/config-reader",
@@ -271,9 +272,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -291,9 +290,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/dynamic-to-top.zip?timestamp=1581145748",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/dynamic-to-top.zip?timestamp=1581145748"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -311,9 +308,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.8.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/jetpack.8.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -331,9 +326,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.3.3.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.3.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -351,9 +344,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -371,9 +362,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -391,9 +380,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/wilson.1.36.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/wilson.1.36.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
