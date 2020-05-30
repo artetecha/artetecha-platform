@@ -6,3 +6,7 @@
 neminisdb:
   type: mariadb:10.4
   disk: 512
+
+pgdb:
+  type: mariadb:10.4
+  disk: 512
