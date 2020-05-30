@@ -20,7 +20,7 @@
   type: redirect
   to: "https://www.neminis.org/"
 
-"https://beta.pergrazia.com/":
+"https://pg.neminis.org/":
   type: upstream
   upstream: "pg:http"
   cache:
