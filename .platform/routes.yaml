@@ -3,7 +3,7 @@
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
 
-'https://{default}/':
+'https://neminis.org/':
   type: upstream
   upstream: 'neminis:http'
   cache:
@@ -16,6 +16,6 @@
       - '/^wp-settings-/'
       - '/^wp-postpass/'
 
-'https://www.{default}/':
+'https://www.neminis.org/':
   type: redirect
-  to: 'https://{default}/'
+  to: 'https://neminis.org/'
