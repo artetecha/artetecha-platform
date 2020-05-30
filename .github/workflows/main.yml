@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2.2.0
       - name: Install Platform.sh CLI
-        run: curl -sS https://platform.sh/cli/installer | php
+        run: | 
+          curl -sS https://platform.sh/cli/installer | php
+          source ~/.bashrc
       - name: Backup Neminis
         run: platform backup:create -p ${{secrets.PSH_PROJECT_NEMINIS}} master
