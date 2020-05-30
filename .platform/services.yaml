@@ -5,4 +5,4 @@
 
 neminisdb:
   type: mariadb:10.4
-  disk: 2048
+  disk: 512
