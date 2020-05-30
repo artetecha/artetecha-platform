@@ -38,7 +38,8 @@
 		"wpackagist-plugin/dynamic-to-top": "*",
 		"wpackagist-plugin/jetpack": "*",
 		"wpackagist-plugin/really-simple-ssl": "*",
-		"wpackagist-plugin/updraftplus": "*"
+		"wpackagist-plugin/updraftplus": "*",
+		"wpackagist-plugin/wordpress-importer": "*"
 	},
 	"scripts": {
 		"movewpconfig": [
