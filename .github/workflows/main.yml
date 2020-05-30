@@ -21,3 +21,5 @@ jobs:
         run: curl -sS https://platform.sh/cli/installer | php
       - name: Backup Neminis
         run: /home/runner/.platformsh/bin/platform backup:create -p ${{secrets.PSH_PROJECT_NEMINIS}} master
+        env:
+          PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}
