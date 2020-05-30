@@ -29,10 +29,16 @@
 		}
 	],
 	"require": {
-		"php": ">=5.6.20",
+		"php": ">=7.3",
 		"johnpbloch/wordpress-core-installer": "^1.0",
-		"johnpbloch/wordpress-core": "dev-master",
-		"platformsh/config-reader": "^2.3"
+		"johnpbloch/wordpress-core": "5.4.1",
+		"platformsh/config-reader": "^2.3",
+		"wpackagist-theme/twentytwenty": "*",
+		"wpackagist-plugin/akismet": "*",
+		"wpackagist-plugin/dynamic-to-top": "*",
+		"wpackagist-plugin/jetpack": "*",
+		"wpackagist-plugin/really-simple-ssl": "*",
+		"wpackagist-plugin/updraftplus": "*"
 	},
 	"scripts": {
 		"movewpconfig": [
@@ -42,10 +48,10 @@
 	},
 	"extra": {
 		"installer-paths": {
-			"wordpress/wp-content/plugins/{$name}": [
+			"wordpress-excludes/wp-content/plugins/{$name}": [
 				"type:wordpress-plugin"
 			],
-			"wordpress/wp-content/themes/{$name}": [
+			"wordpress-excludes/wp-content/themes/{$name}": [
 				"type:wordpress-theme"
 			],
 			"wordpress/wp-content/mu-plugins/{$name}": [
