@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6230f58ff779e29e13849dca25634b65",
+    "content-hash": "8aa543072ee30b15184544345fb01c0b",
     "packages": [
         {
             "name": "composer/installers",
@@ -400,6 +400,26 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwenty/"
+        },
+        {
+            "name": "wpackagist-theme/wilson",
+            "version": "1.36",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/wilson/",
+                "reference": "1.36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/wilson.1.36.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/wilson/"
         }
     ],
     "packages-dev": [],
