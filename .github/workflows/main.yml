@@ -16,10 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Platform CLI
-      uses: adam7/platformsh-cli-action@v1.0
-      with:
-        # Your platform.sh API token https://docs.platform.sh/development/cli/api-tokens.html
-        token: 4UnU05u-ZQ5ALqGA8aWhhAQPUg3DNJbP_q5o33GaKUE
-    - name: Backup Neminis
-      run: platform backup:create -p 3b7ulfk7kwlys master
+      - uses: actions/checkout@v1
+      - uses: adam7/platformsh-action@v1
+        with: 
+          token: ${{secrets.PLATFORMSH_CLI_TOKEN}} #required
+      - name: Backup Neminis
+        run: platform backup:create -p ${{secrets.PSH_PROJECT_NEMINIS}} master
