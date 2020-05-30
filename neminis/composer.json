@@ -48,10 +48,10 @@
 	},
 	"extra": {
 		"installer-paths": {
-			"wordpress-excludes/wp-content/plugins/{$name}": [
+			"wordpress/wp-content/plugins/{$name}": [
 				"type:wordpress-plugin"
 			],
-			"wordpress-excludes/wp-content/themes/{$name}": [
+			"wordpress/wp-content/themes/{$name}": [
 				"type:wordpress-theme"
 			],
 			"wordpress/wp-content/mu-plugins/{$name}": [
