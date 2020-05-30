@@ -20,7 +20,7 @@
   type: redirect
   to: "https://www.neminis.org/"
 
-"https://{default}/":
+"https://beta.pergrazia.com/":
   type: upstream
   upstream: "pg:http"
   cache:
@@ -32,7 +32,3 @@
       - "wordpress_test_cookie"
       - "/^wp-settings-/"
       - "/^wp-postpass/"
-
-"https://www.{default}/":
-  type: redirect
-  to: "https://{default}/"
