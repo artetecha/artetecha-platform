@@ -34,7 +34,7 @@
 		"johnpbloch/wordpress-core": "5.4.1",
 		"platformsh/config-reader": "^2.3",
 		"wpackagist-theme/twentytwenty": "*",
-		"wpackagist-theme/lovecraft": "1.31",
+		"wpackagist-theme/lovecraft": "2.0.0",
 		"wpackagist-plugin/akismet": "*",
 		"wpackagist-plugin/jetpack": "*",
 		"wpackagist-plugin/really-simple-ssl": "*",
