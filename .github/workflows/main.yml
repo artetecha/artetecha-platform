@@ -17,7 +17,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2.2.0
-      - uses: adam7/platformsh-action@v1.0
+      - uses: adam7/platformsh-cli-action@v1.0
         with: 
           token: ${{secrets.PLATFORMSH_CLI_TOKEN}} #required
       - name: Backup Neminis
