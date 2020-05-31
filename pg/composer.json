@@ -44,6 +44,7 @@
 		"wpackagist-plugin/social-pug": "*",
 		"wpackagist-plugin/series": "*",
 		"wpackagist-plugin/wpforms-lite": "*",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "4.1.4",
 		"inpsyde/wp-translation-downloader": "^1.1"
 	},
 	"scripts": {
