@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1849bbe6501419c685c29a774c98aa36",
+    "content-hash": "652848905dfe277d8e7ecdd7e03028c9",
     "packages": [
         {
             "name": "composer/installers",
@@ -369,6 +369,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contextual-category-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/fastly",
+            "version": "1.2.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fastly/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fastly.zip?timestamp=1588107865",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fastly/"
         },
         {
             "name": "wpackagist-plugin/jetpack",
