@@ -44,7 +44,8 @@
 		"wpackagist-plugin/social-pug": "*",
 		"wpackagist-plugin/series": "*",
 		"wpackagist-plugin/wpforms-lite": "*",
-		"inpsyde/wp-translation-downloader": "^1.1"
+		"inpsyde/wp-translation-downloader": "^1.1",
+		"wpackagist-plugin/litespeed-cache": "^3.2"
 	},
 	"scripts": {
 		"movewpconfig": [
