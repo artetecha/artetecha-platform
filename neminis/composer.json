@@ -29,7 +29,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4",
+		"php": ">=7.3",
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"johnpbloch/wordpress-core": "5.4.1",
 		"platformsh/config-reader": "^2.3",
@@ -39,6 +39,7 @@
 		"wpackagist-plugin/dynamic-to-top": "*",
 		"wpackagist-plugin/jetpack": "*",
 		"wpackagist-plugin/really-simple-ssl": "*",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "*",
 		"wpackagist-plugin/wordpress-importer": "*"
 	},
 	"scripts": {
