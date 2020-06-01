@@ -9,7 +9,7 @@ neminisdb:
 
 pgdb:
   type: mariadb:10.4
-disk: 512
+  disk: 512
 
 redis:
   type: redis:5.0

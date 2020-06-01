@@ -16,8 +16,8 @@ build:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-   database: "pgdb:mysql"
-   rediscache: "redis:redis"
+  database: "pgdb:mysql"
+  rediscache: "redis:redis"
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -67,5 +67,5 @@ mounts:
     source_path: "uploads"
 
 runtime:
-	extensions:
-			- redis
+  extensions:
+    - redis
