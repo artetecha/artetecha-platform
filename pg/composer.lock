@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1849bbe6501419c685c29a774c98aa36",
+    "content-hash": "fbda73c8f879b0ba1e451fd5b314bd9d",
     "packages": [
         {
             "name": "composer/installers",
@@ -469,6 +469,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-cloudflare-page-cache",
+            "version": "4.1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
+                "reference": "tags/4.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-cloudflare-page-cache/"
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
