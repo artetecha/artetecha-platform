@@ -5,8 +5,9 @@ This repository hosts the codebase for two sites, both
 - are built using [WordPress.org](https://wordpress.org)
 - are deployed on [Platform.sh](https://platform.sh) in [Multi-App setup](https://docs.platform.sh/configuration/app/multi-app.html)
 - have their codebase managed via [Composer](https://getcomposer.org), thanks to [`johnbolch/wordpress`](https://github.com/johnpbloch/wordpress) and [WordPress Packagist](https://wpackagist.org)
-- have their dependencies automatically checked by [Dependabot](https://dependabot.com) and automatically merged by [Mergify](https://mergify.io) when builds pass
-- have a Cloudflare CDN in front of them
+- have their dependencies automatically upgraded by [Dependabot](https://dependabot.com) and automatically merged by [Mergify](https://mergify.io) when builds pass
+- have a [Cloudflare](https://www.cloudflare.com) CDN in front of them
+- use [GitHub Actions](https://github.com/features/actions) as CI/CD and Cron Scheduler
 
 Also, one of the two sites is not in English, and uses translation files for WordPress core, themes, and plugins for an optimal setup.
 
@@ -32,9 +33,15 @@ This service, too, provides a free plan for public repositories. Youn can config
 
 ## Cloudflare
 
-[Cloudflare](https://www.cloudflare.com) is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/golive/cdn.html); it is also one that provides a good free plan.
+Cloudflare is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/golive/cdn.html); it is also one that provides a good free plan.
 When you combine that with the awesome plugin [WP Cloudflare Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/), choosing Cloudflare for your personal sites becomes really a no-brainer.
 
 ## WordPress translation files and Composer
 
 WordPress Packagist does not provide such files at the moment. Thankfully, the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
+
+## GitHub Actions
+
+It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project. 
+
+Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/golive/steps.html#4-bonus-steps-optional), I chose to have this functionality decoupled from Platform.sh. 
