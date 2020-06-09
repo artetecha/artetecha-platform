@@ -13,7 +13,7 @@ Also, one of the two sites is not in English, and uses translation files for Wor
 
 ## WordPress
 
-WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can beautiful sites powered by an easy-to-use CMS up and running in no time. 
+WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can have beautiful sites powered by an easy-to-use CMS up and running in no time. 
 
 ## Platform.sh
 
