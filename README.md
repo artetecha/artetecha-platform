@@ -5,11 +5,11 @@ This repository hosts the codebase for two sites, both
 - are built using [WordPress.org](https://wordpress.org)
 - are deployed on [Platform.sh](https://platform.sh) in [Multi-App setup](https://docs.platform.sh/configuration/app/multi-app.html)
 - have their codebase managed via [Composer](https://getcomposer.org), thanks to [`johnbolch/wordpress`](https://github.com/johnpbloch/wordpress) and [WordPress Packagist](https://wpackagist.org)
-- have their dependencies automatically upgraded by [Dependabot](https://dependabot.com) and automatically merged by [Mergify](https://mergify.io) when builds pass
+- have their dependencies automatically upgraded by [Dependabot](https://dependabot.com)
+- have their Dependabot PRs automatically merged by [Mergify](https://mergify.io) when builds pass
+- have new code deployed to production automatically on every PR merge
 - have a [Cloudflare](https://www.cloudflare.com) CDN in front of them
 - use [GitHub Actions](https://github.com/features/actions) as CI/CD and Cron Scheduler
-
-Also, one of the two sites is not in English, and uses translation files for WordPress core, themes, and plugins for an optimal setup.
 
 ## WordPress
 
@@ -19,7 +19,7 @@ WordPress remains by far the CMS that is easiest to adopt, and that provides a f
 
 ***Disclaimer**: I am not affiliated with Platform.sh in any way, shape or form. I am simply a happy user.*
 
-Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your production environment for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. 
+Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your production (or other parent environment, if you branching off branches) environment for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment. 
 
 Feel free to poke around the Platform.sh configuration file in this repo to see how the sites were set up with a multi-container deployment comprising of various services. 
 
@@ -38,7 +38,7 @@ When you combine that with the awesome plugin [WP Cloudflare Super Page Cache](h
 
 ## WordPress translation files and Composer
 
-WordPress Packagist does not provide such files at the moment. Thankfully, the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
+One of the sites is not in English, and uses translation files for WordPress core, themes, and plugins for an optimal setup. WordPress Packagist does not currently provide such files at the moment, but—–thankfully–—the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
 
 ## GitHub Actions
 
