@@ -46,6 +46,7 @@
     "wpackagist-plugin/wpforms-lite": "*",
     "wpackagist-plugin/wp-cloudflare-page-cache": "*",
     "wpackagist-plugin/redis-cache": "*",
+    "wpackagist-plugin/wp-search-with-algolia": "^1.3",
     "inpsyde/wp-translation-downloader": "^1.1"
   },
   "scripts": {
