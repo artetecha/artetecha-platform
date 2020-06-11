@@ -33,7 +33,6 @@
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"johnpbloch/wordpress-core": "^5.4.1",
 		"platformsh/config-reader": "^2.3",
-		"wpackagist-theme/twentytwenty": "^1.4",
 		"wpackagist-theme/wilson": "^1.36",
 		"wpackagist-plugin/akismet": "^4.1.6",
 		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
@@ -44,10 +43,11 @@
 		"wpackagist-plugin/wordpress-importer": "^0.7"
 	},
 	"scripts": {
-		"movewpconfig": [
-			"mv wp-config.php wordpress/"
+		"postbuild": [
+			"mv wp-config.php wordpress/",
+			"rm -rf wordpress/wp-content/themes/twenty*"
 		],
-		"post-install-cmd": "@movewpconfig"
+		"post-install-cmd": "@postbuild"
 	},
 	"extra": {
 		"installer-paths": {
