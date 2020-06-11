@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64792141689660f4648c633da9d8bb4e",
+    "content-hash": "feb72e20c41de62cf3b3b6907cdf641a",
     "packages": [
         {
             "name": "composer/installers",
@@ -544,24 +544,6 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/lovecraft/"
-        },
-        {
-            "name": "wpackagist-theme/twentytwenty",
-            "version": "1.4",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentytwenty/",
-                "reference": "1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.4.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentytwenty/"
         }
     ],
     "packages-dev": [],

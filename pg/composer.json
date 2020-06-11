@@ -33,7 +33,6 @@
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"johnpbloch/wordpress-core": "^5.4.1",
 		"platformsh/config-reader": "^2.3",
-		"wpackagist-theme/twentytwenty": "^1.4",
 		"wpackagist-theme/lovecraft": "2.0.0",
 		"wpackagist-plugin/akismet": "^4.1.6",
 		"wpackagist-plugin/jetpack": "^8.6.1",
@@ -50,11 +49,12 @@
 		"inpsyde/wp-translation-downloader": "^1.1"
 	},
 	"scripts": {
-		"movewpconfig": [
+		"postbuild": [
 			"mv wp-config.php wordpress/",
-			"mv wordpress/wp-content/plugins/redis-cache/includes/object-cache.php wordpress/wp-content/"
+			"mv wordpress/wp-content/plugins/redis-cache/includes/object-cache.php wordpress/wp-content/",
+			"rm -rf wordpress/wp-content/themes/twenty*"
 		],
-		"post-install-cmd": "@movewpconfig"
+		"post-install-cmd": "@postbuild"
 	},
 	"extra": {
 		"installer-paths": {
