@@ -11,6 +11,11 @@ This repository hosts the codebase for two sites, both
 - have a [Cloudflare](https://www.cloudflare.com) CDN in front of them
 - use [GitHub Actions](https://github.com/features/actions) as CI/CD and Cron Scheduler
 
+In addition to the above:
+
+- the `pg` site uses [Elasticsearch](https://www.elastic.co/elasticsearch/) via [ElasticPress](https://github.com/10up/ElasticPress)
+- the `neminis` site uses [Algolia](https://www.algolia.com) search via [WP Search with Algolia](https://wordpress.org/plugins/wp-search-with-algolia/)
+
 ## WordPress
 
 WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can have beautiful sites powered by an easy-to-use CMS up and running in no time. 
@@ -19,17 +24,17 @@ WordPress remains by far the CMS that is easiest to adopt, and that provides a f
 
 ***Disclaimer**: I am not affiliated with Platform.sh in any way, shape or form. I am simply a happy user.*
 
-Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your production (or other parent environment, if you branching off branches) environment for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment. 
+Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your production (or other parent environment, if you branching off branches) environment for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
 
-Feel free to poke around the Platform.sh configuration file in this repo to see how the sites were set up with a multi-container deployment comprising of various services. 
+Feel free to poke around the Platform.sh configuration file in this repo to see how the sites were set up with a multi-container deployment comprising of various services.
 
 ## Dependabot
 
-Now part of the GitHub family, it provides a free plan for public repositories, and it supports PHP+Composer. You can configure it to decide what kind of upgrades you want to perform on your dependencies, and the bot will issue pull requests periodically, avoiding stale depenencies. 
+Now part of the GitHub family, it provides a free plan for public repositories, and it supports PHP+Composer. You can configure it to decide what kind of upgrades you want to perform on your dependencies, and the bot will issue pull requests periodically, avoiding stale depenencies.
 
 ## Mergify
 
-This service, too, provides a free plan for public repositories. Youn can configure it with a number of conditions that, when met, will trigger an automatic merge of your pull requests. 
+This service, too, provides a free plan for public repositories. Youn can configure it with a number of conditions that, when met, will trigger an automatic merge of your pull requests.
 
 ## Cloudflare
 
@@ -45,3 +50,11 @@ One of the sites is not in English, and uses translation files for WordPress cor
 It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project. 
 
 Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/golive/steps.html#4-bonus-steps-optional), I chose to have this functionality decoupled from Platform.sh. 
+
+## Elasticsearch and ElasticPress
+
+[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine that centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. [Platform.sh allows a very easy adoption of the service](https://docs.platform.sh/configuration/services/elasticsearch.html). [ElasticPress](https://github.com/10up/ElasticPress) provides a seamless integration with WordPress.
+
+## Algolia
+
+[Algolia](https://www.algolia.com/doc/faq/why/what-makes-algolia-different-than-elasticsearch-or-solr/) is a commercial service similar to ElasticSearch or Solr, but that claims to be up to 200x faster than Elasticsearch. There is a [free plan](https://www.algolia.com/pricing) that is definitely suitable for small sites. Algolia [no longer maintains an official WordPress plugin](https://www.algolia.com/doc/integration/wordpress/indexing/setting-up-algolia/) but their former official plugin was forked and it is now known as [WP Search with Algolia](https://wordpress.org/plugins/wp-search-with-algolia/). It is actively maintained and works well as far as we have been able to ascertain.

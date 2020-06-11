@@ -40,6 +40,7 @@
 		"wpackagist-plugin/jetpack": "*",
 		"wpackagist-plugin/really-simple-ssl": "*",
 		"wpackagist-plugin/wp-cloudflare-page-cache": "*",
+		"wpackagist-plugin/wp-search-with-algolia": "^1.3",
 		"wpackagist-plugin/wordpress-importer": "*"
 	},
 	"scripts": {
