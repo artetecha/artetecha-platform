@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "532a0f10f8d9fd15b00dbd2fef7d46dc",
+    "content-hash": "ee0f31523fda7ce289b5f123c94cd38f",
     "packages": [
         {
             "name": "composer/installers",
@@ -371,16 +371,34 @@
             "homepage": "https://wordpress.org/plugins/wp-cloudflare-page-cache/"
         },
         {
-            "name": "wpackagist-theme/twentytwenty",
-            "version": "1.3",
+            "name": "wpackagist-plugin/wp-search-with-algolia",
+            "version": "1.3.0",
             "source": {
                 "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentytwenty/",
-                "reference": "1.3"
+                "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
+                "reference": "tags/1.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.1.3.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-search-with-algolia/"
+        },
+        {
+            "name": "wpackagist-theme/twentytwenty",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentytwenty/",
+                "reference": "1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -416,5 +434,6 @@
     "platform": {
         "php": ">=7.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
