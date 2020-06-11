@@ -22,8 +22,8 @@ hooks:
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
   database: 'pgdb:mysql'
-	rediscache: 'redis:redis'
-	essearch: 'es:elasticsearch'
+  rediscache: 'redis:redis'
+  essearch: 'es:elasticsearch'
 
 # The configuration of app when it is exposed to the web.
 web:

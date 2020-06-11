@@ -12,8 +12,8 @@ pgdb:
   disk: 512
 
 redis:
-	type: redis:5.0
+  type: redis:5.0
 
 es:
-	type: elasticsearch:7.2
-	disk: 256
+  type: elasticsearch:7.2
+  disk: 256
