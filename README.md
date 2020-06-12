@@ -8,13 +8,14 @@ This repository hosts the codebase for two sites, both
 - have their dependencies automatically upgraded by [Dependabot](https://dependabot.com)
 - have their Dependabot PRs automatically merged by [Mergify](https://mergify.io) when builds pass
 - have new code deployed to production automatically on every PR merge
-- have a [Cloudflare](https://www.cloudflare.com) CDN in front of them
+- use [Redis](https://redis.io) as back-end caching
+- use [Cloudflare](https://www.cloudflare.com) as CDN
 - use [GitHub Actions](https://github.com/features/actions) as CI/CD and Cron Scheduler
 
 In addition to the above:
 
-- the `pg` site uses [Elasticsearch](https://www.elastic.co/elasticsearch/) via [ElasticPress](https://github.com/10up/ElasticPress)
-- the `neminis` site uses [Algolia](https://www.algolia.com) search via [WP Search with Algolia](https://wordpress.org/plugins/wp-search-with-algolia/)
+- the `pg` site uses [Elasticsearch](https://www.elastic.co/elasticsearch/)
+- the `neminis` site uses [Algolia](https://www.algolia.com)
 
 ## WordPress
 
@@ -36,6 +37,10 @@ Now part of the GitHub family, it provides a free plan for public repositories, 
 
 This service, too, provides a free plan for public repositories. Youn can configure it with a number of conditions that, when met, will trigger an automatic merge of your pull requests.
 
+## Redis
+
+Redis is an open source, in-memory data structure store, that here we use as a back-end cache system via the [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin. It is [easy to adopt with Platform.sh](https://docs.platform.sh/configuration/services/redis.html), as it is one of the many containeresed services that you can add to your project.
+
 ## Cloudflare
 
 Cloudflare is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/golive/cdn.html); it is also one that provides a good free plan.
@@ -51,7 +56,7 @@ It seemed like the obvious choice. Currently no particular CI/CD task is impleme
 
 Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/golive/steps.html#4-bonus-steps-optional), I chose to have this functionality decoupled from Platform.sh. 
 
-## Elasticsearch and ElasticPress
+## Elasticsearch
 
 [Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine that centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. [Platform.sh allows a very easy adoption of the service](https://docs.platform.sh/configuration/services/elasticsearch.html). [ElasticPress](https://github.com/10up/ElasticPress) provides a seamless integration with WordPress.
 
