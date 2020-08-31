@@ -329,15 +329,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/3.3.4"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.3.3.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.zip?timestamp=1598255384"
             },
             "require": {
                 "composer/installers": "~1.0"
