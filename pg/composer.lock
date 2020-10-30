@@ -380,15 +380,15 @@
         },
         {
             "name": "wpackagist-plugin/elasticpress",
-            "version": "3.5",
+            "version": "3.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elasticpress/",
-                "reference": "tags/3.5"
+                "reference": "tags/3.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elasticpress.3.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.3.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
