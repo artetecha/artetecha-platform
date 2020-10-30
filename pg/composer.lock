@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9889476e10a2349fd0d8fc65803f870d",
+    "content-hash": "a2e22bb882f9e761648926e78534730d",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,32 +145,29 @@
         },
         {
             "name": "inpsyde/wp-translation-downloader",
-            "version": "1.2.2",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inpsyde/wp-translation-downloader.git",
-                "reference": "6cd587977c03187db8951111e386eac294f0fac5"
+                "reference": "535a9aaa3ce550fa89a45534200dcb8aa3f21a89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/6cd587977c03187db8951111e386eac294f0fac5",
-                "reference": "6cd587977c03187db8951111e386eac294f0fac5",
+                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/535a9aaa3ce550fa89a45534200dcb8aa3f21a89",
+                "reference": "535a9aaa3ce550fa89a45534200dcb8aa3f21a89",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.0 || ^2.0",
                 "composer/installers": "^1.6",
                 "php": ">=7.1"
             },
-            "conflict": {
-                "composer/composer": ">=2.0"
-            },
             "require-dev": {
+                "behat/behat": "^3.7",
                 "brain/monkey": "^2",
-                "composer/composer": "^1.0",
-                "inpsyde/php-coding-standards": "^0.13",
-                "phpunit/phpunit": "^8",
-                "squizlabs/php_codesniffer": "^3"
+                "composer/composer": "^2.0",
+                "inpsyde/php-coding-standards": "^1.0.0-RC.1",
+                "phpunit/phpunit": "^8"
             },
             "type": "composer-plugin",
             "extra": {
@@ -192,7 +189,7 @@
                 }
             ],
             "description": "Composer plugin to download translations from wordpress.org API.",
-            "time": "2020-10-27T08:20:34+00:00"
+            "time": "2020-10-30T14:32:34+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
