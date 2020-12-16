@@ -20,7 +20,7 @@ jobs:
       - name: Install Platform.sh CLI
         run: |
           curl -sS https://platform.sh/cli/installer | php
-          echo "::add-path::/home/runner/.platformsh/bin"
+          echo "/home/runner/.platformsh/bin" >> $GITHUB_PATH
       - name: Backup Neminis
         run: platform  backup:create -W -p ${{secrets.PSH_PROJECT_NEMINIS}} master
         env:
