@@ -365,15 +365,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-cloudflare-page-cache",
-            "version": "4.3.9.2",
+            "version": "4.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
-                "reference": "tags/4.3.9.2"
+                "reference": "tags/4.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.3.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.4.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
