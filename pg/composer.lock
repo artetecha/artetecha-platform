@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49fc7d7624da0efc6c78794d28aba0c4",
+    "content-hash": "a550f84fb264824bececc1e67efff06a",
     "packages": [
         {
             "name": "composer/installers",
@@ -546,15 +546,15 @@
         },
         {
             "name": "wpackagist-theme/lovecraft",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/lovecraft/",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/lovecraft.2.0.0.zip"
+                "url": "https://downloads.wordpress.org/theme/lovecraft.2.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
