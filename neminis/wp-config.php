@@ -106,6 +106,12 @@ define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+define('DOMAIN_CURRENT_SITE', 'www.neminis.org.pr-180-gdl7vdq-3b7ulfk7kwlys.eu-2.platformsh.site');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 // Since you can have multiple installations in one database, you need a unique
 // prefix.
