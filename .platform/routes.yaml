@@ -38,7 +38,7 @@
 
 "https://www.rinnovatamente.com/":
   type: upstream
-  upstream: "oc:http"
+  upstream: "neminis:http"
   cache:
     enabled: true
     # Base the cache on the session cookies. Ignore all other cookies.
