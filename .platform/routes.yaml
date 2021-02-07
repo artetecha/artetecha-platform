@@ -37,7 +37,7 @@
   type: redirect
   to: "https://www.pergrazia.com/"
 
-"https://www.otticacristiana.com/":
+"https://www.rinnovatamente.com/":
   type: upstream
   upstream: "oc:http"
   cache:
@@ -50,6 +50,6 @@
       - "/^wp-settings-/"
       - "/^wp-postpass/"
 
-"https://otticacristiana.com/":
+"https://rinnovatamente.com/":
   type: redirect
-  to: "https://www.otticacristiana.com/"
+  to: "https://www.rinnovatamente.com/"
