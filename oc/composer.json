@@ -26,6 +26,19 @@
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+			  "name": "artetecha/read-wp-theme",
+			  "type": "wordpress-theme",
+			  "version": "dev-master",
+			  "source": {
+				"type": "git",
+				"url": "git@github.com:artetecha/read-wp-theme.git",
+				"reference": "master"
+			  }
+			}
 		}
 	],
 	"require": {
@@ -46,7 +59,8 @@
 		"wpackagist-plugin/wp-cloudflare-page-cache": "^4.1.4",
 		"wpackagist-plugin/redis-cache": "^2.0.2",
 		"wpackagist-plugin/elasticpress": "^3.4.1",
-		"inpsyde/wp-translation-downloader": "^2.0"
+		"inpsyde/wp-translation-downloader": "^2.0",
+		"artetecha/read-wp-theme": "dev-master"
 	},
 	"scripts": {
 		"postbuild": [

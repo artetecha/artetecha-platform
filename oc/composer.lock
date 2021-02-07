@@ -4,8 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a550f84fb264824bececc1e67efff06a",
+    "content-hash": "91a486a6c49b524d4efcfbb0c68cc4e0",
     "packages": [
+        {
+            "name": "artetecha/read-wp-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:artetecha/read-wp-theme.git",
+                "reference": "master"
+            },
+            "type": "wordpress-theme",
+            "time": "2021-02-05T18:19:58+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.10.0",
@@ -566,7 +577,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "artetecha/read-wp-theme": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
