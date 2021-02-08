@@ -11,10 +11,6 @@ pgdb:
   type: mariadb:10.4
   disk: 512
 
-ocdb:
-  type: mariadb:10.4
-  disk: 256
-
 redis:
   type: redis:5.0
 
