@@ -64,3 +64,6 @@ mounts:
   "wordpress/wp-content/uploads":
     source: local
     source_path: "uploads"
+  "wordpress/wp-content/plugins/wp-cloudflare-page-cache":
+    source: local
+    source_path: "wp-cloudflare-page-cache"
