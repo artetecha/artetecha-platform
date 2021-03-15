@@ -64,6 +64,6 @@ mounts:
   "wordpress/wp-content/uploads":
     source: local
     source_path: "uploads"
-  "wordpress/wp-content/wp-cloudflare-super-page-cache/www.neminis.org":
+  "wordpress/wp-content/wp-cloudflare-super-page-cache":
     source: local
     source_path: "wp-cloudflare-page-cache"
