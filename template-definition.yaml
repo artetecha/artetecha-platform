@@ -32,7 +32,7 @@ info:
     tags:
         - PHP
         - CMS
-				- WordPress
+        - WordPress
     # An image URI (either base64-encoded or a URL) representing the template.  Base64-encoded SVG strongly preferred.
     # image: data:image/svg+xml;...
     # Additional notes displayed in the template's detail view.
