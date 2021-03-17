@@ -43,7 +43,7 @@ Redis is an open source, in-memory data structure store, that here we use as a b
 
 ## Cloudflare
 
-Cloudflare is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/golive/cdn.html); it is also one that provides a good free plan.
+Cloudflare is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/domains/cdn.html); it is also one that provides a good free plan.
 When you combine that with the awesome plugin [WP Cloudflare Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/), choosing Cloudflare for your personal sites becomes really a no-brainer.
 
 ## WordPress translation files and Composer
@@ -54,7 +54,7 @@ One of the sites is not in English, and uses translation files for WordPress cor
 
 It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project. 
 
-Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/golive/steps.html#4-bonus-steps-optional), I chose to have this functionality decoupled from Platform.sh. 
+Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/configuration/app/cron.html), I chose to have this functionality decoupled from Platform.sh. 
 
 ## Elasticsearch
 
@@ -63,3 +63,5 @@ Although Platform.sh allow you to do that by defining Cron Jobs [on their own pl
 ## Algolia
 
 [Algolia](https://www.algolia.com/doc/faq/why/what-makes-algolia-different-than-elasticsearch-or-solr/) is a commercial service similar to ElasticSearch or Solr, but that claims to be up to 200x faster than Elasticsearch. There is a [free plan](https://www.algolia.com/pricing) that is definitely suitable for small sites. Algolia [no longer maintains an official WordPress plugin](https://www.algolia.com/doc/integration/wordpress/indexing/setting-up-algolia/) but their former official plugin was forked and it is now known as [WP Search with Algolia](https://wordpress.org/plugins/wp-search-with-algolia/). It is actively maintained and works well as far as we have been able to ascertain.
+
+<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/artetecha/artetecha-platform/blob/master/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://github.com/artetecha/artetecha-platform/blob/master/template-definition.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg"></a>
