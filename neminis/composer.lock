@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aabb61558b2af401f3e829a3257ef4b3",
+    "content-hash": "40f0aa06a89e53daf813bbf8c44457ae",
     "packages": [
         {
             "name": "composer/installers",
@@ -410,15 +410,15 @@
         },
         {
             "name": "wpackagist-theme/wilson",
-            "version": "1.36",
+            "version": "2.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/wilson/",
-                "reference": "1.36"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/wilson.1.36.zip"
+                "url": "https://downloads.wordpress.org/theme/wilson.2.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
