@@ -4,7 +4,7 @@ This repository hosts the codebase for two sites, both
 
 - are built using [WordPress.org](https://wordpress.org)
 - are deployed on [Platform.sh](https://platform.sh) in [Multi-App setup](https://docs.platform.sh/configuration/app/multi-app.html)
-- have their codebase managed via [Composer](https://getcomposer.org), thanks to [`johnbolch/wordpress`](https://github.com/johnpbloch/wordpress) and [WordPress Packagist](https://wpackagist.org)
+- have their codebase managed via [Composer](https://getcomposer.org), thanks to [`johnpbloch/wordpress`](https://github.com/johnpbloch/wordpress) and [WordPress Packagist](https://wpackagist.org)
 - have their dependencies automatically upgraded by [Dependabot](https://dependabot.com)
 - have their Dependabot PRs automatically merged by [Mergify](https://mergify.io) when builds pass
 - have new code deployed to production automatically on every PR merge
@@ -25,13 +25,13 @@ WordPress remains by far the CMS that is easiest to adopt, and that provides a f
 
 ***Disclaimer**: I am not affiliated with Platform.sh in any way, shape or form. I am simply a happy user.*
 
-Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your production (or other parent environment, if you branching off branches) environment for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
+Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
 
-Feel free to poke around the Platform.sh configuration file in this repo to see how the sites were set up with a multi-container deployment comprising of various services.
+Feel free to poke around the Platform.sh configuration files in this repo to see how the sites were set up with a multi-container deployment comprising of various services.
 
 ## Dependabot
 
-Now part of the GitHub family, it provides a free plan for public repositories, and it supports PHP+Composer. You can configure it to decide what kind of upgrades you want to perform on your dependencies, and the bot will issue pull requests periodically, avoiding stale depenencies.
+Now part of the GitHub family, it provides a free plan for public repositories, and it supports PHP+Composer. You can configure it to decide what kind of upgrades you want to perform on your dependencies, and the bot will issue pull requests periodically, avoiding stale dependencies.
 
 ## Mergify
 
@@ -39,7 +39,7 @@ This service, too, provides a free plan for public repositories. Youn can config
 
 ## Redis
 
-Redis is an open source, in-memory data structure store, that here we use as a back-end cache system via the [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin. It is [easy to adopt with Platform.sh](https://docs.platform.sh/configuration/services/redis.html), as it is one of the many containeresed services that you can add to your project.
+Redis is an open source, in-memory data structure store, that here I use as a back-end cache system via the [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin. It is [easy to adopt with Platform.sh](https://docs.platform.sh/configuration/services/redis.html), as it is one of the many containeresed services that you can add to your project.
 
 ## Cloudflare
 
@@ -48,7 +48,7 @@ When you combine that with the awesome plugin [WP Cloudflare Super Page Cache](h
 
 ## WordPress translation files and Composer
 
-One of the sites is not in English, and uses translation files for WordPress core, themes, and plugins for an optimal setup. WordPress Packagist does not currently provide such files at the moment, but—–thankfully–—the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
+One of the sites is not in English and uses translation files for WordPress core, themes, and plugins for an optimal setup. WordPress Packagist does not currently provide such files, but—–thankfully–—the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
 
 ## GitHub Actions
 
