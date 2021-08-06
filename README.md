@@ -23,8 +23,6 @@ WordPress remains by far the CMS that is easiest to adopt, and that provides a f
 
 ## Platform.sh
 
-***Disclaimer**: I am not affiliated with Platform.sh in any way, shape or form. I am simply a happy user.*
-
 Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
 
 Feel free to poke around the Platform.sh configuration files in this repo to see how the sites were set up with a multi-container deployment comprising of various services.
