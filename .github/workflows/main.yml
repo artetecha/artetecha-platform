@@ -21,7 +21,7 @@ jobs:
         run: |
           curl -sS https://platform.sh/cli/installer | php
           echo "/home/runner/.platformsh/bin" >> $GITHUB_PATH
-      - name: Backup Neminis
-        run: platform  backup:create -W -p ${{secrets.PSH_PROJECT_NEMINIS}} master
+      - name: Backup Project Artetecha
+        run: platform backup:create -W -p ${{secrets.PSH_PROJECT_NEMINIS}} master
         env:
           PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}
