@@ -10,7 +10,7 @@ on:
 jobs:
   # This workflow contains a single job called "bxuild"
   backup:
-    name: Perform Backup for WP sites
+    name: Perform Backup for Artetecha WP sites
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -21,7 +21,7 @@ jobs:
         run: |
           curl -sS https://platform.sh/cli/installer | php
           echo "/home/runner/.platformsh/bin" >> $GITHUB_PATH
-      - name: Backup Neminis
-        run: platform  backup:create -W -p ${{secrets.PSH_PROJECT_NEMINIS}} master
+      - name: Backup Project Artetecha
+        run: platform backup:create -W -p ${{secrets.PSH_PROJECT_ARTETECHA}} master
         env:
           PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}
