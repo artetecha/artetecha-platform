@@ -53,7 +53,8 @@
 		"postbuild": [
 			"mv wp-config.php wordpress/",
 			"mv wordpress/wp-content/plugins/redis-cache/includes/object-cache.php wordpress/wp-content/",
-			"rm -rf wordpress/wp-content/themes/twenty*"
+			"rm -rf wordpress/wp-content/themes/twenty*",
+		  	"rm -rf wordpress/wp-content/themes/hello.php"
 		],
 		"post-install-cmd": "@postbuild"
 	},

@@ -45,3 +45,7 @@
 !/wordpress/wp-content/plugins/README.md
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/README.md
+
+# Hidden files
+.DS_Store
+/*/.DS_Store
