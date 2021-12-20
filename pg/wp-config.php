@@ -123,6 +123,11 @@ ini_set('session.cookie_lifetime', 2000000);
 ini_set('pcre.backtrack_limit', 200000);
 ini_set('pcre.recursion_limit', 200000);
 
+// Really Simple SSL session cookie settings.
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
   define( 'ABSPATH', dirname( __FILE__ ) . '/' );
