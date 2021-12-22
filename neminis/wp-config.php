@@ -108,8 +108,6 @@ define( 'WP_SITEURL', WP_HOME );
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
-define( 'JETPACK_STAGING_MODE', true );
-
 // Since you can have multiple installations in one database, you need a unique
 // prefix.
 $table_prefix = 'wp_';

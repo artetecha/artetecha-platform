@@ -67,7 +67,7 @@ if ( $config->isValidPlatform() ) {
 			define( 'WP_DEBUG', false );
 		}
 
-		// Set all of the necessary keys to unique values, based on the Platform.sh
+		// Set all the necessary keys to unique values, based on the Platform.sh
 		// entropy value.
 		if ( $config->projectEntropy ) {
 			$keys    = [
