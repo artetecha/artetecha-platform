@@ -94,9 +94,9 @@ if ( $config->isValidPlatform() ) {
 		define( 'WP_REDIS_HOST', $credentials['host'] );
 		define( 'WP_REDIS_PORT', $credentials['port'] );
 	}
-	// Set Jetpack staging mode when not on production.
 	if ( ! $config->onProduction() ) {
 		define( 'JETPACK_STAGING_MODE', true );
+		define( 'DISALLOW_INDEXING', true );
 	}
 } else {
 	// Local configuration file should be in project root.
