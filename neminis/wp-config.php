@@ -87,11 +87,10 @@ if ( $config->isValidPlatform() ) {
 				}
 			}
 		}
-
-		// Set Jetpack staging mode when not on production.
-		if ( ! $config->onProduction() ) {
-			define( 'JETPACK_STAGING_MODE', true );
-		}
+	}
+	// Set Jetpack staging mode when not on production.
+	if ( ! $config->onProduction() ) {
+		define( 'JETPACK_STAGING_MODE', true );
 	}
 } else {
 	// Local configuration file should be in project root.
