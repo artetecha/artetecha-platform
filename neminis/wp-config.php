@@ -90,7 +90,6 @@ if ( $config->isValidPlatform() ) {
 	}
 	if ( ! $config->onProduction() ) {
 		define( 'JETPACK_DEV_DEBUG', true );
-		define( 'DISALLOW_INDEXING', true );
 	}
 } else {
 	// Local configuration file should be in project root.
