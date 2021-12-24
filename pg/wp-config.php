@@ -95,7 +95,7 @@ if ( $config->isValidPlatform() ) {
 		define( 'WP_REDIS_PORT', $credentials['port'] );
 	}
 	if ( ! $config->onProduction() ) {
-		define( 'JETPACK_STAGING_MODE', true );
+		define( 'JETPACK_DEV_DEBUG', true );
 		define( 'DISALLOW_INDEXING', true );
 	}
 } else {
