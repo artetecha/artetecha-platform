@@ -14,6 +14,3 @@ else
 	wp core update-db
 fi
 
-if [ "$PLATFORM_BRANCH" != "master" ]; then
-	wp plugin deactivate jetpack
-fi
