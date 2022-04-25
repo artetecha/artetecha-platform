@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff59d0601a915a41d202d74b131a0c30",
+    "content-hash": "4ea9674cacd264724984f25c41b9ace8",
     "packages": [
         {
             "name": "composer/installers",
@@ -571,6 +571,24 @@
             "homepage": "https://wordpress.org/plugins/wp-rss-aggregator/"
         },
         {
+            "name": "wpackagist-plugin/wpematico",
+            "version": "2.6.14",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpematico/",
+                "reference": "tags/2.6.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpematico.2.6.14.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpematico/"
+        },
+        {
             "name": "wpackagist-plugin/wpforms-lite",
             "version": "1.7.3",
             "source": {
@@ -617,5 +635,5 @@
         "php": ">=7.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }
