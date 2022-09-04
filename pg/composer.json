@@ -76,5 +76,12 @@
 			],
 			"directory": "wordpress/wp-content/languages"
 		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"inpsyde/wp-translation-downloader": true,
+			"johnpbloch/wordpress-core-installer": true
+		}
 	}
 }
