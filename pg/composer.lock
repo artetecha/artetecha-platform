@@ -153,16 +153,16 @@
         },
         {
             "name": "inpsyde/wp-translation-downloader",
-            "version": "2.4",
+            "version": "2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inpsyde/wp-translation-downloader.git",
-                "reference": "531e545bfd6c9c3d302f4eccd189ad70275be874"
+                "reference": "623b060cfc22210c8599d14a2eafa1e0bec53df1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/531e545bfd6c9c3d302f4eccd189ad70275be874",
-                "reference": "531e545bfd6c9c3d302f4eccd189ad70275be874",
+                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/623b060cfc22210c8599d14a2eafa1e0bec53df1",
+                "reference": "623b060cfc22210c8599d14a2eafa1e0bec53df1",
                 "shasum": ""
             },
             "require": {
@@ -203,9 +203,9 @@
             "description": "Composer plugin to download translations from wordpress.org API.",
             "support": {
                 "issues": "https://github.com/inpsyde/wp-translation-downloader/issues",
-                "source": "https://github.com/inpsyde/wp-translation-downloader/tree/2.4"
+                "source": "https://github.com/inpsyde/wp-translation-downloader/tree/2.5"
             },
-            "time": "2022-12-09T13:07:56+00:00"
+            "time": "2023-04-14T08:49:43+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
