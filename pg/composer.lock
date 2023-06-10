@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf4abdf9706e12a6a93edde90c6270f5",
+    "content-hash": "e638f30cfb005c324fc31fc98d35bc6a",
     "packages": [
         {
             "name": "composer/installers",
@@ -351,24 +351,6 @@
                 "source": "https://github.com/platformsh/config-reader-php/tree/2.4.0"
             },
             "time": "2020-12-10T20:50:12+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/academic-bloggers-toolkit",
-            "version": "5.2.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/academic-bloggers-toolkit/",
-                "reference": "tags/5.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/academic-bloggers-toolkit.5.2.2.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/academic-bloggers-toolkit/"
         },
         {
             "name": "wpackagist-plugin/akismet",
