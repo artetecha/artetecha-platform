@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e7b200a8d3d17f8ada480b5551d9f17",
+    "content-hash": "91b703d7171ef2b1ca4ac421f6d66c49",
     "packages": [
         {
             "name": "composer/installers",
@@ -313,24 +313,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/"
-        },
-        {
-            "name": "wpackagist-plugin/dynamic-to-top",
-            "version": "3.5.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/dynamic-to-top/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/dynamic-to-top.zip?timestamp=1581145748"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/dynamic-to-top/"
         },
         {
             "name": "wpackagist-plugin/jetpack",

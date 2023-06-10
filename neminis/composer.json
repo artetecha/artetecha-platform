@@ -35,7 +35,6 @@
 		"platformsh/config-reader": "^2.3",
 		"wpackagist-theme/wilson": "^2.0",
 		"wpackagist-plugin/akismet": "^5.0",
-		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
 		"wpackagist-plugin/jetpack": "^12.0",
 		"wpackagist-plugin/really-simple-ssl": "^7.0.1",
 		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.3",
@@ -46,7 +45,6 @@
 	  "default-theme": "wilson",
 	  "enable-plugins": [
 		"akismet",
-		"dynamic-to-top",
 		"jetpack",
 		"really-simple-ssl",
 		"wp-cloudflare-page-cache",
