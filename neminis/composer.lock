@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac5fcf93607b0fb7cd403f4e15f5ec7d",
+    "content-hash": "73659bf8a7d05dedf0c030d12fd9e8de",
     "packages": [
         {
             "name": "composer/installers",
@@ -313,6 +313,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/"
+        },
+        {
+            "name": "wpackagist-plugin/artificial-intelligence-auto-content-generator",
+            "version": "3.10.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/artificial-intelligence-auto-content-generator/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/artificial-intelligence-auto-content-generator.zip?timestamp=1684207056"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/artificial-intelligence-auto-content-generator/"
         },
         {
             "name": "wpackagist-plugin/jetpack",
