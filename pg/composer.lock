@@ -517,15 +517,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-cloudflare-page-cache",
-            "version": "5.0.3",
+            "version": "5.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
-                "reference": "tags/5.0.3"
+                "reference": "tags/5.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.5.0.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.5.0.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
