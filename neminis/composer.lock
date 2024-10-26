@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c53c56eb1b813b32c6fe6172745597d9",
+    "content-hash": "5b0cf58020ff55f803435d7bdaf2eebb",
     "packages": [
         {
             "name": "composer/installers",
@@ -352,6 +352,24 @@
             "homepage": "https://wordpress.org/plugins/really-simple-ssl/"
         },
         {
+            "name": "wpackagist-plugin/redirection",
+            "version": "5.5.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/5.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.5.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.8.3",
             "source": {
@@ -434,5 +452,5 @@
         "php": ">=7.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
